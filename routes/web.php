@@ -23,7 +23,9 @@ use App\Http\Controllers\GreetController;
 */
 
 Route::get('/', function () {
-    echo asset('Storage/file.txt');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/home', function () {
